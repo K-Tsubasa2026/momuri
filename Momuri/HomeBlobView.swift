@@ -1,15 +1,13 @@
 import SwiftUI
 
-/// 홈: 오늘 루틴을 가운데 모무리에 이어진 액체 방울로 보여준다.
-/// 방울은 천천히 떠다니고, 가까워지면 서로 녹아 붙는다 (blur + alphaThreshold).
-/// 색은 상태만 말한다: 검정=할 일, 회색=끝냄, 주황=곧, 빨강=놓침·요즘 자주 놓침.
+/// 홈: 오늘 루틴을 가운데 모무리쿤에 액체 줄기로 이어진 카드로 보여준다 (그리기·움직임은 RoutineOrbitView).
+/// 색은 상태만 말한다: 검정=할 일, 회색+체크=끝냄, 주황=곧, 빨강=기한 지남·긴급.
+/// 요즘 자주 놓치는 루틴은 카드에 빨간 점, 아래에 한 줄로 알려 준다.
 struct HomeBlobView: View {
     let routines: [Routine]
     let onOpen: (Routine) -> Void
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    /// 잠깐 보여 줄 반응 (점프·만세). 끝나면 nil 로 돌아가 평소 표정이 된다
-    @State private var burst: MomuriCharacterView.Mood?
 
     private let cal = Calendar.current
 
@@ -37,13 +35,27 @@ struct HomeBlobView: View {
     }
 
     struct Blob: Identifiable {
+        static let corner: CGFloat = 20
+
         let id: UUID
         let routine: Routine
         let title: String
         let status: String
         let tone: Tone
-        let radius: CGFloat
-        let seed: Double
+        let oftenMissed: Bool
+        let size: CGSize
+        let drift: OrbitDrift
+
+        var accessibilityText: String {
+            let state: String = switch tone {
+            case .todo: "할 일"
+            case .done: "끝냄"
+            case .soon: "곧 해야 해요"
+            case .missed: "기한 지남"
+            case .rest: "쉬는 날"
+            }
+            return "\(title), \(status), \(state)" + (oftenMissed ? ", 요즘 자주 놓쳐요" : "")
+        }
     }
 
     private var blobs: [Blob] {
@@ -51,11 +63,13 @@ struct HomeBlobView: View {
         let items = routines.filter { r in
             (r.kind != .once && r.appears(on: today)) || (r.kind == .once && r.isUpcoming && (r.eventLabel(relative: true) != "지남") && (cal.dateComponents([.day], from: cal.startOfDay(for: today), to: cal.startOfDay(for: r.eventDate)).day ?? 99) <= 3)
         }
-        return items.prefix(10).enumerated().map { i, r in
+        let missed = Set(oftenMissed.map(\.0))
+        return items.prefix(10).map { r in
             let tone = tone(of: r)
-            let base: CGFloat = r.isCritical ? 40 : 33
+            let base = r.isCritical ? CGSize(width: 108, height: 62) : CGSize(width: 100, height: 58)
+            let size = tone == .done || tone == .rest ? CGSize(width: base.width * 0.9, height: base.height * 0.9) : base
             return Blob(id: r.id, routine: r, title: r.name, status: r.kind == .once ? r.eventLabel(relative: true) : r.listStatus(on: today),
-                        tone: tone, radius: tone == .done || tone == .rest ? base * 0.8 : base, seed: Double(i) * 1.7 + 0.3)
+                        tone: tone, oftenMissed: missed.contains(r.name), size: size, drift: OrbitDrift(id: r.id))
         }
     }
 
@@ -69,17 +83,7 @@ struct HomeBlobView: View {
         case .none: break
         }
         if let n = r.daysUntilDue(), n < 0 { return .missed }
-        if missRate(r) >= 0.4 { return .missed }
         return .todo
-    }
-
-    /// 지난 7일(오늘 제외) 해야 했던 날 중 놓친 비율
-    private func missRate(_ r: Routine) -> Double {
-        guard r.kind == .daily, r.category != .screen else { return 0 }
-        let days = (1...7).compactMap { cal.date(byAdding: .day, value: -$0, to: cal.startOfDay(for: .now)) }
-            .filter { $0 >= r.startDay && !r.isRestDay($0) }
-        guard days.count >= 3 else { return 0 }
-        return Double(days.filter { !r.isDone(on: $0) }.count) / Double(days.count)
     }
 
     /// 요즘 자주 놓치는 루틴 (홈 아래 한 줄)
@@ -103,64 +107,8 @@ struct HomeBlobView: View {
     var body: some View {
         let blobs = blobs
         VStack(spacing: 12) {
-            TimelineView(.animation(paused: reduceMotion)) { timeline in
-                let t = reduceMotion ? 0 : timeline.date.timeIntervalSinceReferenceDate
-                GeometryReader { geo in
-                    let center = CGPoint(x: geo.size.width / 2, y: geo.size.height / 2)
-                    let points = positions(blobs, in: geo.size, center: center, t: t)
-                    ZStack {
-                        Canvas { context, _ in
-                            // alphaThreshold는 한 가지 색만 남겨서, 색(상태)마다 층을 따로 그린다
-                            for tone in [Tone.done, .rest, .todo, .soon, .missed] {
-                                let group = zip(blobs, points).filter { $0.0.tone == tone }
-                                guard !group.isEmpty || tone == .todo else { continue }
-                                context.drawLayer { layer in
-                                    layer.addFilter(.alphaThreshold(min: 0.5, color: tone.fill))
-                                    layer.addFilter(.blur(radius: 8))
-                                    // 가운데에서 뻗는 액체 줄기
-                                    for (blob, p) in group {
-                                        var path = Path()
-                                        path.move(to: center)
-                                        let mid = CGPoint(x: (center.x + p.x) / 2 + CGFloat(sin(t * 0.7 + blob.seed)) * 16,
-                                                          y: (center.y + p.y) / 2 + CGFloat(cos(t * 0.6 + blob.seed)) * 16)
-                                        path.addQuadCurve(to: p, control: mid)
-                                        layer.stroke(path, with: .color(.black), lineWidth: 14)
-                                    }
-                                    for (blob, p) in group {
-                                        let r = blob.radius * (1 + 0.05 * CGFloat(sin(t * 1.3 + blob.seed * 2)))
-                                        layer.fill(Path(ellipseIn: CGRect(x: p.x - r, y: p.y - r, width: r * 2, height: r * 2)), with: .color(.black))
-                                    }
-                                    if tone == .todo {
-                                        let cr: CGFloat = 64 + 3 * CGFloat(sin(t * 2))
-                                        layer.fill(Path(ellipseIn: CGRect(x: center.x - cr, y: center.y - cr, width: cr * 2, height: cr * 2)), with: .color(.black))
-                                    }
-                                }
-                            }
-                        }
-
-                        // 가운데 모무리
-                        character(t: t)
-                            .position(center)
-
-                        // 이름표와 누르는 자리 (방울을 따라 움직인다)
-                        ForEach(Array(zip(blobs, points)), id: \.0.id) { blob, p in
-                            Button { onOpen(blob.routine) } label: {
-                                VStack(spacing: 1) {
-                                    Text(blob.title).font(.caption2.weight(.semibold)).lineLimit(1)
-                                    Text(blob.status).font(.caption2).monospacedDigit().lineLimit(1)
-                                }
-                                .foregroundStyle(blob.tone.text)
-                                .frame(width: blob.radius * 2 - 8)
-                                .minimumScaleFactor(0.6)
-                                .frame(width: blob.radius * 2, height: blob.radius * 2)
-                                .contentShape(Circle())
-                            }
-                            .buttonStyle(.plain)
-                            .position(p)
-                            .accessibilityLabel("\(blob.title) \(blob.status)")
-                        }
-                    }
-                }
+            RoutineOrbitView(blobs: blobs, onOpen: onOpen) {
+                character(blobs: blobs)
             }
             .frame(maxWidth: .infinity)
             .frame(height: 470)
@@ -168,28 +116,26 @@ struct HomeBlobView: View {
             summary
         }
         .padding(.horizontal, 20)
-        .onChange(of: progress.done) { old, new in
-            guard new > old else { return }
-            // 하나 끝내면 작게 점프, 전부 끝내면 통통 뛰기
-            if progress.total > 0 && new == progress.total { celebrate() } else { hop() }
-        }
     }
 
-    /// 평소 표정: 할 일이 없으면 갸웃, 밤이거나 오늘이 전부 쉬는 날이면 졸림
-    private var restingMood: MomuriCharacterView.Mood {
+    /// 밤이거나, 할 일이 없고 오늘이 쉬는 날이면 모무리쿤이 쉰다
+    private func isResting(_ blobs: [Blob]) -> Bool {
         let hour = cal.component(.hour, from: .now)
-        if hour >= 23 || hour < 6 { return .sleepy }
-        if blobs.isEmpty { return routines.contains { $0.isRestDay(.now) } ? .sleepy : .wonder }
-        return .idle
+        if hour >= 23 || hour < 6 { return true }
+        return blobs.isEmpty && routines.contains { $0.isRestDay(.now) }
     }
 
-    private func character(t: Double) -> some View {
+    private func character(blobs: [Blob]) -> some View {
         let p = progress
         return ZStack {
             Circle().fill(Color(.systemBackground)).frame(width: 116, height: 116)
-            MomuriCharacterView(mood: reduceMotion ? restingMood : (burst ?? restingMood))
-                .frame(width: 136, height: 136)
-                .offset(y: -20)
+            // 완료 점프·전부 완료 축하는 모무리쿤이 completed 변화를 보고 스스로 한다
+            MomuriKunView(rate: p.total > 0 ? Double(p.done) / Double(p.total) : 0,
+                          completed: p.done,
+                          isResting: isResting(blobs),
+                          isReminding: blobs.contains { $0.tone == .soon })
+                .frame(width: 92)
+                .offset(y: -8)
                 .allowsHitTesting(false)
             if p.total > 0 {
                 Text("\(p.done)/\(p.total)")
@@ -218,38 +164,10 @@ struct HomeBlobView: View {
                         .font(.footnote)
                 }
             }
-            Text("방울을 누르면 자세히 볼 수 있어요")
+            Text("카드를 누르면 자세히 볼 수 있어요")
                 .font(.caption)
                 .foregroundStyle(.tertiary)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-    }
-
-    // MARK: - 움직임
-
-    /// 가운데를 도는 두 겹 고리 위에 놓고, 저마다 천천히 흔들린다
-    private func positions(_ blobs: [Blob], in size: CGSize, center: CGPoint, t: Double) -> [CGPoint] {
-        let n = max(blobs.count, 1)
-        let rx = size.width / 2 - 52
-        let ry = size.height / 2 - 52
-        return blobs.enumerated().map { i, b in
-            let angle = Double(i) / Double(n) * 2 * .pi - .pi / 2 + sin(t * 0.15 + b.seed) * 0.12
-            let ring = i % 2 == 0 ? 0.95 : 0.74
-            let wobble = 1 + 0.04 * sin(t * 0.9 + b.seed * 3)
-            return CGPoint(x: center.x + CGFloat(cos(angle) * ring * wobble) * rx,
-                           y: center.y + CGFloat(sin(angle) * ring * wobble) * ry)
-        }
-    }
-
-    private func hop() { react(.hop, for: 1.3) }
-
-    private func celebrate() { react(.cheer, for: 2.7) }
-
-    /// 반응 애니메이션을 정해진 시간만 보여 준다 (점프 1회 1.3초, 만세 통통 3회 2.7초)
-    private func react(_ mood: MomuriCharacterView.Mood, for seconds: Double) {
-        burst = mood
-        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            if burst == mood { burst = nil }
-        }
     }
 }

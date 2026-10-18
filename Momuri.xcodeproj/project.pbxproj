@@ -29,7 +29,6 @@
 		5FEB639DA24ECF6606C9E9F6 /* GrassViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9EF9921404D80FC4F2694 /* GrassViews.swift */; };
 		65AA5610AE0565F91E50BC81 /* PartChips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B647392B432D0602FB3B31D /* PartChips.swift */; };
 		670F14303459CE1B2D3EF45B /* DietLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A306AE5C9A141B17B7223 /* DietLiveActivity.swift */; };
-		6AB28CEA080EA4C9AC34FC69 /* MomuriCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868B7FA02D9B7DEA8D9AF93E /* MomuriCharacterView.swift */; };
 		6AF77650F0E907315FF3345A /* CompleteFromAlarmIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F286B8E955FDB1BD41EC3 /* CompleteFromAlarmIntent.swift */; };
 		6E59FCEB5B2F4D8C46101E52 /* ScreenTimeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722C6657C527A60EA237B62 /* ScreenTimeShared.swift */; };
 		74C136BDFF18EE030F62C239 /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784B3F8CD589BF0621025D36 /* CategoryPickerView.swift */; };
@@ -48,17 +47,19 @@
 		A7F9E3C864631E8EF4AACB03 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA78B73A60B29DCA5660B68 /* Models.swift */; };
 		A863DCCA1AADA3AF264DFB19 /* ShareSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9628E522794E63D6DD831F42 /* ShareSync.swift */; };
 		AB71D8C0C0DC0874CD23A58A /* ScreenTimeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722C6657C527A60EA237B62 /* ScreenTimeShared.swift */; };
+		ABC0C6D7E8EA21D81AD2618C /* RoutineOrbitLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB87665048AF369FEA3E4D /* RoutineOrbitLayout.swift */; };
 		AD9F4767A5122BCD505F05A6 /* DietLiveActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409978BB4171CBA9F0AB438D /* DietLiveActivityWidget.swift */; };
-		AF584A5BE442E12813208BA6 /* momuri.riv in Resources */ = {isa = PBXBuildFile; fileRef = AA5EB809F802E17D48CCFB70 /* momuri.riv */; };
 		B3F44E1C4F60146E9FC8019A /* ChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB903F268763E6A2AE66C /* ChatTools.swift */; };
 		B507B71BFAE0D5222EB1DEE0 /* ToggleRoutineIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A432396D5264EC90C893913 /* ToggleRoutineIntent.swift */; };
+		B5A7E8BBCD00EDC27087067B /* RoutineOrbitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACC320B0F20EAC29E76400B /* RoutineOrbitView.swift */; };
 		B65310B1AC3B108808192A50 /* RoutineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E1988EB2D6C4CBE6A1F2F /* RoutineListView.swift */; };
-		CAA683B31952FA262A5543DE /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = F563C3D41E0D3DB8AA894E1B /* RiveRuntime */; };
+		C588718B53B0D1E9ECA43399 /* MomuriKunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A7DB7E30952193E452C778 /* MomuriKunView.swift */; };
 		CBCB375EA17C7BB639BD11AB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA78B73A60B29DCA5660B68 /* Models.swift */; };
 		CF2652E8EF88FE30EF10E0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF3118D1CACC6E218C64A0 /* Assets.xcassets */; };
 		D15D00B8E11AD9A216752CC1 /* MomuriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCFB6557E3FD5C62D2F9FF /* MomuriTests.swift */; };
 		D4A23ED8C808816D217DA9AF /* MomuriReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 7DB1CD5EB33479023E3724FE /* MomuriReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D541728DB4D7F3C745865DAE /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA2F0155DAFB97F7304463 /* MonthCalendarView.swift */; };
+		D6062FBAD0A5527B46FF34C4 /* RoutineBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15E56A8DACCF0237246AE72 /* RoutineBubbleView.swift */; };
 		D70FA1C7FBAB3DEF675E8C09 /* AlarmScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E6F5D6D9B7B72FCB5CFE97 /* AlarmScheduler.swift */; };
 		D75E081EEE18308442160CDC /* RoutineIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B7D102ED945E4000F8D99 /* RoutineIntents.swift */; };
 		E25CA201F46F37E68B6F5A9F /* CalendarTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2EA510AF65FAE6A3F4F1C /* CalendarTab.swift */; };
@@ -151,6 +152,7 @@
 		343E1988EB2D6C4CBE6A1F2F /* RoutineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineListView.swift; sourceTree = "<group>"; };
 		3B647392B432D0602FB3B31D /* PartChips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartChips.swift; sourceTree = "<group>"; };
 		3BA17969C03D59388FB6E75A /* MomuriReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MomuriReport.entitlements; sourceTree = "<group>"; };
+		3ECB87665048AF369FEA3E4D /* RoutineOrbitLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineOrbitLayout.swift; sourceTree = "<group>"; };
 		409978BB4171CBA9F0AB438D /* DietLiveActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietLiveActivityWidget.swift; sourceTree = "<group>"; };
 		411D8CF2DB1AC686186A21D8 /* ChatFallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFallback.swift; sourceTree = "<group>"; };
 		42CACCCC5539C87F60C81C00 /* Momuri.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Momuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +163,8 @@
 		5A1716D63F155EA46836D8CE /* MomuriMonitor.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MomuriMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABF3118D1CACC6E218C64A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DABCDACF8CA9F0AECE0BD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		60A7DB7E30952193E452C778 /* MomuriKunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomuriKunView.swift; sourceTree = "<group>"; };
+		6ACC320B0F20EAC29E76400B /* RoutineOrbitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineOrbitView.swift; sourceTree = "<group>"; };
 		6FC9EF9921404D80FC4F2694 /* GrassViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrassViews.swift; sourceTree = "<group>"; };
 		6FD04F83DB2DAD591B170857 /* Routine+Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routine+Schedule.swift"; sourceTree = "<group>"; };
 		7468D8959E0050123430931A /* MomuriWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MomuriWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,7 +172,6 @@
 		7AF76C87A7FCB590CD99C661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7DB1CD5EB33479023E3724FE /* MomuriReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = MomuriReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		82065523947EABA07C3B2514 /* ActivityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMonitor.swift; sourceTree = "<group>"; };
-		868B7FA02D9B7DEA8D9AF93E /* MomuriCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomuriCharacterView.swift; sourceTree = "<group>"; };
 		86C6104499CE45A8410A005A /* RoutineActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineActions.swift; sourceTree = "<group>"; };
 		8A06B083A0F68579D037F5AE /* HomeBlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBlobView.swift; sourceTree = "<group>"; };
 		8B85384B8A8BC370DA1A62B6 /* DebugSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSeed.swift; sourceTree = "<group>"; };
@@ -184,10 +187,10 @@
 		99CE87321F66ADA313CEF1E5 /* HealthSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSync.swift; sourceTree = "<group>"; };
 		9A432396D5264EC90C893913 /* ToggleRoutineIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRoutineIntent.swift; sourceTree = "<group>"; };
 		9C6FB903F268763E6A2AE66C /* ChatTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTools.swift; sourceTree = "<group>"; };
-		AA5EB809F802E17D48CCFB70 /* momuri.riv */ = {isa = PBXFileReference; path = momuri.riv; sourceTree = "<group>"; };
 		AEEECCFD829201463E8EAA6E /* StudyLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyLogView.swift; sourceTree = "<group>"; };
 		B8F6E634521753498CF63E52 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		C00F286B8E955FDB1BD41EC3 /* CompleteFromAlarmIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteFromAlarmIntent.swift; sourceTree = "<group>"; };
+		C15E56A8DACCF0237246AE72 /* RoutineBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineBubbleView.swift; sourceTree = "<group>"; };
 		C1EE949670837712C08DEBFD /* RoutineFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineFormView.swift; sourceTree = "<group>"; };
 		C43BDDC70FB13C27F82BCF01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C8A523855D9E0D711418D473 /* ShareClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareClient.swift; sourceTree = "<group>"; };
@@ -201,17 +204,6 @@
 		E8A1051940C76B36D6B08017 /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
 		F7FCFB6557E3FD5C62D2F9FF /* MomuriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomuriTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		887AB84D82F3A8002B633035 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAA683B31952FA262A5543DE /* RiveRuntime in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3B719A56429CE31CB88BA4DD /* MomuriTests */ = {
@@ -313,14 +305,16 @@
 				8A06B083A0F68579D037F5AE /* HomeBlobView.swift */,
 				5DABCDACF8CA9F0AECE0BD93 /* Info.plist */,
 				2D28D858E254E42B7829BFC7 /* Momuri.entitlements */,
-				AA5EB809F802E17D48CCFB70 /* momuri.riv */,
 				C9F911AEDB8FCA3FED41CDF5 /* MomuriApp.swift */,
-				868B7FA02D9B7DEA8D9AF93E /* MomuriCharacterView.swift */,
+				60A7DB7E30952193E452C778 /* MomuriKunView.swift */,
 				54AA2F0155DAFB97F7304463 /* MonthCalendarView.swift */,
 				3B647392B432D0602FB3B31D /* PartChips.swift */,
+				C15E56A8DACCF0237246AE72 /* RoutineBubbleView.swift */,
 				903B32C8F38494AC857CDEF6 /* RoutineDetailView.swift */,
 				C1EE949670837712C08DEBFD /* RoutineFormView.swift */,
 				343E1988EB2D6C4CBE6A1F2F /* RoutineListView.swift */,
+				3ECB87665048AF369FEA3E4D /* RoutineOrbitLayout.swift */,
+				6ACC320B0F20EAC29E76400B /* RoutineOrbitView.swift */,
 				8DEF0173A07178B00036954F /* ScreenTimeManager.swift */,
 				921FE63E3694D1D0F602D9B7 /* ScreenTimeReportView.swift */,
 				AEEECCFD829201463E8EAA6E /* StudyLogView.swift */,
@@ -417,7 +411,6 @@
 			buildPhases = (
 				E2F503F15D7C70557DD1CB20 /* Sources */,
 				91B0DDA73A5C6907765DCB39 /* Resources */,
-				887AB84D82F3A8002B633035 /* Frameworks */,
 				B543B8713407DFD7390012FE /* Embed Foundation Extensions */,
 				F22EAF7B011F5A7718FA8FBC /* Embed ExtensionKit Extensions */,
 			);
@@ -430,7 +423,6 @@
 			);
 			name = Momuri;
 			packageProductDependencies = (
-				F563C3D41E0D3DB8AA894E1B /* RiveRuntime */,
 			);
 			productName = Momuri;
 			productReference = 42CACCCC5539C87F60C81C00 /* Momuri.app */;
@@ -488,9 +480,6 @@
 			);
 			mainGroup = F37C86C7B0B906F091206D6E;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				AEBC969264CC15FFE08E1CB8 /* XCRemoteSwiftPackageReference "rive-ios" */,
-			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F733D1560E8B07304B7734C3 /* Products */;
 			projectDirPath = "";
@@ -511,7 +500,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2652E8EF88FE30EF10E0C6 /* Assets.xcassets in Resources */,
-				AF584A5BE442E12813208BA6 /* momuri.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,17 +578,20 @@
 				A747D42EE4927D88CE051693 /* HomeBlobView.swift in Sources */,
 				CBCB375EA17C7BB639BD11AB /* Models.swift in Sources */,
 				58B738095D6BC1A70F5BCDA2 /* MomuriApp.swift in Sources */,
-				6AB28CEA080EA4C9AC34FC69 /* MomuriCharacterView.swift in Sources */,
+				C588718B53B0D1E9ECA43399 /* MomuriKunView.swift in Sources */,
 				D541728DB4D7F3C745865DAE /* MonthCalendarView.swift in Sources */,
 				4C8C3637DD891EBC20C3C2A7 /* NotificationScheduler.swift in Sources */,
 				65AA5610AE0565F91E50BC81 /* PartChips.swift in Sources */,
 				489082965126D2DF08DB05DF /* Routine+Schedule.swift in Sources */,
 				F73F58DFE53153EDB8E58CDD /* RoutineActions.swift in Sources */,
+				D6062FBAD0A5527B46FF34C4 /* RoutineBubbleView.swift in Sources */,
 				F85E9BAE1BF71B4955F14FBD /* RoutineDetailView.swift in Sources */,
 				0719B329E7C65B80F9BE3B34 /* RoutineFactory.swift in Sources */,
 				9E8024C32601296074E23737 /* RoutineFormView.swift in Sources */,
 				D75E081EEE18308442160CDC /* RoutineIntents.swift in Sources */,
 				B65310B1AC3B108808192A50 /* RoutineListView.swift in Sources */,
+				ABC0C6D7E8EA21D81AD2618C /* RoutineOrbitLayout.swift in Sources */,
+				B5A7E8BBCD00EDC27087067B /* RoutineOrbitView.swift in Sources */,
 				F9D035144468CFB80C8FC8A5 /* ScreenTimeManager.swift in Sources */,
 				935172409B8FF95DFA8FCE07 /* ScreenTimeReportView.swift in Sources */,
 				5F20EB716D61C97E148AA2A0 /* ScreenTimeShared.swift in Sources */,
@@ -987,25 +978,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		AEBC969264CC15FFE08E1CB8 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rive-app/rive-ios";
-			requirement = {
-				kind = exactVersion;
-				version = 6.28.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F563C3D41E0D3DB8AA894E1B /* RiveRuntime */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AEBC969264CC15FFE08E1CB8 /* XCRemoteSwiftPackageReference "rive-ios" */;
-			productName = RiveRuntime;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FD61C78FD0DB7CA015F7956E /* Project object */;
 }
