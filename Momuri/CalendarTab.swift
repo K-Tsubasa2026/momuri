@@ -57,7 +57,7 @@ struct CalendarTab: View {
             }
             Button("취소", role: .cancel) { valueText = "" }
         } message: {
-            if let routine = valueEntry { Text(routine.name + " · 이번 달 " + routine.statusLabel) }
+            if let routine = valueEntry { Text(routine.name + " · " + String(localized: "이번 달 \(routine.statusLabel)")) }
         }
         .onChange(of: selected) { _, day in
             month = day
@@ -91,8 +91,8 @@ struct CalendarTab: View {
 
     private var headerTitle: String {
         let c = cal.dateComponents([.month, .day], from: selected)
-        let weekday = selected.formatted(.dateTime.weekday(.abbreviated).locale(Locale(identifier: "ko_KR")))
-        return "\(c.month ?? 0)월 \(c.day ?? 0)일 \(weekday)"
+        let weekday = selected.formatted(.dateTime.weekday(.abbreviated).locale(Locale.app))
+        return String(localized: "\(c.month ?? 0)월 \(c.day ?? 0)일 \(weekday)")
     }
 
     // MARK: - 할 일 묶음
@@ -158,7 +158,7 @@ struct CalendarTab: View {
         routine.kind == .weekly || routine.kind == .monthly
     }
 
-    private func section<Content: View>(_ title: String, @ViewBuilder content: () -> Content) -> some View {
+    private func section<Content: View>(_ title: LocalizedStringKey, @ViewBuilder content: () -> Content) -> some View {
         VStack(alignment: .leading, spacing: 0) {
             Text(title).font(.caption).foregroundStyle(.secondary).padding(.bottom, 2)
             content()
@@ -262,7 +262,8 @@ struct WeekStrip: View {
     let routines: [Routine]
 
     private let cal = Calendar.current
-    private let weekdays = ["일", "월", "화", "수", "목", "금", "토"]
+    private let weekdays = [String(localized: "일"), String(localized: "월"), String(localized: "화"), String(localized: "수"),
+                            String(localized: "목"), String(localized: "금"), String(localized: "토")]
 
     private var days: [Date] {
         guard let start = cal.dateInterval(of: .weekOfYear, for: selected)?.start else { return [] }

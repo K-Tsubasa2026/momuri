@@ -81,7 +81,7 @@ struct RoutineDetailView: View {
         }
     }
 
-    private func stat(_ value: String, _ label: String) -> some View {
+    private func stat(_ value: LocalizedStringKey, _ label: LocalizedStringKey) -> some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(value).font(.title3.weight(.semibold).monospacedDigit())
             Text(label).font(.caption).foregroundStyle(.secondary)

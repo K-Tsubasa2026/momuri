@@ -46,7 +46,7 @@ struct RoutineListView: View {
                 withAnimation(.snappy(duration: 0.2)) { toggle(name) }
             } label: {
                 HStack(spacing: 6) {
-                    Text(name).font(.caption.weight(.medium))
+                    Text(RoutineCategory.groupTitle(name)).font(.caption.weight(.medium))
                     Text("\(items.count)").font(.caption).foregroundStyle(.tertiary)
                     Spacer()
                     Image(systemName: isCollapsed ? "chevron.down" : "chevron.up").font(.caption2)

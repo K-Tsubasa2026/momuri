@@ -11,6 +11,7 @@ struct WorkoutLogView: View {
     @State private var confirmingRemove = false
     @State private var removing = false
 
+    /// 부위·종목 이름은 저장 값(한국어). 화면에는 localizedValue 로 보여 준다.
     private static let presets: [String: [String]] = [
         "가슴": ["벤치프레스", "인클라인 덤벨프레스", "체스트 플라이", "딥스", "푸시업"],
         "등": ["랫풀다운", "바벨 로우", "시티드 로우", "데드리프트", "풀업"],
@@ -31,8 +32,8 @@ struct WorkoutLogView: View {
     }
 
     private var title: String {
-        let date = log.date.formatted(.dateTime.month().day().weekday(.abbreviated).locale(Locale(identifier: "ko_KR")))
-        return "\(log.part ?? "운동") · \(date)"
+        let date = log.date.formatted(.dateTime.month().day().weekday(.abbreviated).locale(.app))
+        return "\(log.part?.localizedValue ?? String(localized: "운동")) · \(date)"
     }
 
     var body: some View {
@@ -80,10 +81,10 @@ struct WorkoutLogView: View {
         let best = routine?.bestSet(of: exercise)
         return VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .firstTextBaseline) {
-                Text(exercise).font(.headline)
+                Text(exercise.localizedValue).font(.headline)
                 Spacer()
                 if let best, best.weight > 0 {
-                    Text("최고 " + best.summary).font(.caption).foregroundStyle(.secondary)
+                    Text("최고 \(best.summary)").font(.caption).foregroundStyle(.secondary)
                 }
             }
             if let last = previous.last {
@@ -112,7 +113,7 @@ struct WorkoutLogView: View {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 104), spacing: 8)], spacing: 8) {
                     ForEach(suggestions, id: \.self) { name in
                         Button { addExercise(name) } label: {
-                            Text(name)
+                            Text(name.localizedValue)
                                 .font(.footnote)
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.8)
