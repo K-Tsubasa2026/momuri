@@ -1,0 +1,13 @@
+build/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+.DS_Store
+CLAUDE.md
+AGENTS.md
+.claude/
+MomuriDevice.xcodeproj/
+project-device.yml
+build-device/
+server/momuri.db*
+server/node_modules/
+*.xcresult

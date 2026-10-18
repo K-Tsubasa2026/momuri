@@ -1,0 +1,1011 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		013A1F868F4656B211666DDC /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F6E634521753498CF63E52 /* ChatModel.swift */; };
+		0719B329E7C65B80F9BE3B34 /* RoutineFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1041957136C93C34EBB1E11F /* RoutineFactory.swift */; };
+		0ABD8FA1E10234D60A3838AB /* RoutineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C04CC7C0F72A5C344770405 /* RoutineControl.swift */; };
+		109F4EAAA9898A1513FBDB6D /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACC9BC79496ADC22252D66 /* NotificationScheduler.swift */; };
+		15538593CAFBF8DB30C99B47 /* ActivityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82065523947EABA07C3B2514 /* ActivityMonitor.swift */; };
+		195CB1F18E157212242A2388 /* Diet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0654174A76B8F5B714AF80C /* Diet.swift */; };
+		1BD57CA1EDA31BFD0647D76A /* Diet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0654174A76B8F5B714AF80C /* Diet.swift */; };
+		32D90D971006ED4B6C1C891D /* HealthSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CE87321F66ADA313CEF1E5 /* HealthSync.swift */; };
+		34A32E835C98ACF0635DE450 /* ShareClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A523855D9E0D711418D473 /* ShareClient.swift */; };
+		34D51668E8CF5878C9004C9B /* StudyLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEECCFD829201463E8EAA6E /* StudyLogView.swift */; };
+		384C4221FDB2718A7AC7232C /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A1051940C76B36D6B08017 /* SharedStore.swift */; };
+		393D376E8A15345F9D50FC3F /* ScreenTimeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722C6657C527A60EA237B62 /* ScreenTimeShared.swift */; };
+		424098848B826ED45322A923 /* Routine+Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD04F83DB2DAD591B170857 /* Routine+Schedule.swift */; };
+		46F6B2E32B0921B72AD6D935 /* RoutineActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C6104499CE45A8410A005A /* RoutineActions.swift */; };
+		489082965126D2DF08DB05DF /* Routine+Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD04F83DB2DAD591B170857 /* Routine+Schedule.swift */; };
+		4C8C3637DD891EBC20C3C2A7 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACC9BC79496ADC22252D66 /* NotificationScheduler.swift */; };
+		58B738095D6BC1A70F5BCDA2 /* MomuriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F911AEDB8FCA3FED41CDF5 /* MomuriApp.swift */; };
+		5A3605EC84529E32266907EF /* MomuriMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5A1716D63F155EA46836D8CE /* MomuriMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5F20EB716D61C97E148AA2A0 /* ScreenTimeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722C6657C527A60EA237B62 /* ScreenTimeShared.swift */; };
+		5FEB639DA24ECF6606C9E9F6 /* GrassViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9EF9921404D80FC4F2694 /* GrassViews.swift */; };
+		65AA5610AE0565F91E50BC81 /* PartChips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B647392B432D0602FB3B31D /* PartChips.swift */; };
+		670F14303459CE1B2D3EF45B /* DietLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A306AE5C9A141B17B7223 /* DietLiveActivity.swift */; };
+		6AB28CEA080EA4C9AC34FC69 /* MomuriCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868B7FA02D9B7DEA8D9AF93E /* MomuriCharacterView.swift */; };
+		6AF77650F0E907315FF3345A /* CompleteFromAlarmIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F286B8E955FDB1BD41EC3 /* CompleteFromAlarmIntent.swift */; };
+		6E59FCEB5B2F4D8C46101E52 /* ScreenTimeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722C6657C527A60EA237B62 /* ScreenTimeShared.swift */; };
+		74C136BDFF18EE030F62C239 /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784B3F8CD589BF0621025D36 /* CategoryPickerView.swift */; };
+		7E4763998C542C0601E47A25 /* WorkoutLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95165C7A4DEC7A35F73991FD /* WorkoutLogView.swift */; };
+		810DC453FE00F99F20012DD3 /* RoutineIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B7D102ED945E4000F8D99 /* RoutineIntents.swift */; };
+		851D0A0F85649392ED84FFCB /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7007B95E51250F2FCD299E5 /* Backup.swift */; };
+		8880A452B893BF65AFFAF951 /* MomuriReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F768C76EAD2A25139E74B /* MomuriReport.swift */; };
+		8FAEA52C9AEC6A40C78D309B /* MomuriWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BE7C4D3578A32B96E7D88 /* MomuriWidget.swift */; };
+		935172409B8FF95DFA8FCE07 /* ScreenTimeReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FE63E3694D1D0F602D9B7 /* ScreenTimeReportView.swift */; };
+		94E2D45D8E69290C9C145523 /* CompleteFromAlarmIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F286B8E955FDB1BD41EC3 /* CompleteFromAlarmIntent.swift */; };
+		9E8024C32601296074E23737 /* RoutineFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EE949670837712C08DEBFD /* RoutineFormView.swift */; };
+		A013348E640CC73ED23AA1F7 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A1051940C76B36D6B08017 /* SharedStore.swift */; };
+		A24F88D4C4E7DACB4D3A3487 /* GrassViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9EF9921404D80FC4F2694 /* GrassViews.swift */; };
+		A747D42EE4927D88CE051693 /* HomeBlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A06B083A0F68579D037F5AE /* HomeBlobView.swift */; };
+		A75AB2CDCFB11F207FA69F81 /* ToggleRoutineIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A432396D5264EC90C893913 /* ToggleRoutineIntent.swift */; };
+		A7F9E3C864631E8EF4AACB03 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA78B73A60B29DCA5660B68 /* Models.swift */; };
+		A863DCCA1AADA3AF264DFB19 /* ShareSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9628E522794E63D6DD831F42 /* ShareSync.swift */; };
+		AB71D8C0C0DC0874CD23A58A /* ScreenTimeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722C6657C527A60EA237B62 /* ScreenTimeShared.swift */; };
+		AD9F4767A5122BCD505F05A6 /* DietLiveActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409978BB4171CBA9F0AB438D /* DietLiveActivityWidget.swift */; };
+		AF584A5BE442E12813208BA6 /* momuri.riv in Resources */ = {isa = PBXBuildFile; fileRef = AA5EB809F802E17D48CCFB70 /* momuri.riv */; };
+		B3F44E1C4F60146E9FC8019A /* ChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB903F268763E6A2AE66C /* ChatTools.swift */; };
+		B507B71BFAE0D5222EB1DEE0 /* ToggleRoutineIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A432396D5264EC90C893913 /* ToggleRoutineIntent.swift */; };
+		B65310B1AC3B108808192A50 /* RoutineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E1988EB2D6C4CBE6A1F2F /* RoutineListView.swift */; };
+		CAA683B31952FA262A5543DE /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = F563C3D41E0D3DB8AA894E1B /* RiveRuntime */; };
+		CBCB375EA17C7BB639BD11AB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA78B73A60B29DCA5660B68 /* Models.swift */; };
+		CF2652E8EF88FE30EF10E0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF3118D1CACC6E218C64A0 /* Assets.xcassets */; };
+		D15D00B8E11AD9A216752CC1 /* MomuriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCFB6557E3FD5C62D2F9FF /* MomuriTests.swift */; };
+		D4A23ED8C808816D217DA9AF /* MomuriReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 7DB1CD5EB33479023E3724FE /* MomuriReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D541728DB4D7F3C745865DAE /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA2F0155DAFB97F7304463 /* MonthCalendarView.swift */; };
+		D70FA1C7FBAB3DEF675E8C09 /* AlarmScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E6F5D6D9B7B72FCB5CFE97 /* AlarmScheduler.swift */; };
+		D75E081EEE18308442160CDC /* RoutineIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B7D102ED945E4000F8D99 /* RoutineIntents.swift */; };
+		E25CA201F46F37E68B6F5A9F /* CalendarTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2EA510AF65FAE6A3F4F1C /* CalendarTab.swift */; };
+		E4DEE5602C363FC06C1BBDF6 /* ChatFallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D8CF2DB1AC686186A21D8 /* ChatFallback.swift */; };
+		E7D243144A3164D8F8CF5285 /* ShareSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E1DCC22D3652BFEBB44AC /* ShareSection.swift */; };
+		E83D529C1B11B32E748D5A93 /* Workout+Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815020600DC763B06F33860 /* Workout+Stats.swift */; };
+		E9DF5FA932F3EBF90844A9CD /* ShareModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D576434A06BC951F612DFB0 /* ShareModels.swift */; };
+		EDFE7128B8CD9C88983F5A35 /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EF4DC6CD555B6577946815 /* AppShortcuts.swift */; };
+		F200F2860B5468BCDF4926C1 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D359D86C1DBE6386A59DCA /* ChatView.swift */; };
+		F23CF48A4C50A45DA5189E78 /* Workout+Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815020600DC763B06F33860 /* Workout+Stats.swift */; };
+		F269295168F8CD228A3C075F /* MomuriWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7468D8959E0050123430931A /* MomuriWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F73F58DFE53153EDB8E58CDD /* RoutineActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C6104499CE45A8410A005A /* RoutineActions.swift */; };
+		F7DDB7079C2193A94EE92E28 /* LockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBAD85C90AF7A6570FD5CD4 /* LockScreenWidget.swift */; };
+		F85E9BAE1BF71B4955F14FBD /* RoutineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B32C8F38494AC857CDEF6 /* RoutineDetailView.swift */; };
+		F9D035144468CFB80C8FC8A5 /* ScreenTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF0173A07178B00036954F /* ScreenTimeManager.swift */; };
+		FDF6B2E6A62A3EFD5D57AB2E /* DebugSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B85384B8A8BC370DA1A62B6 /* DebugSeed.swift */; };
+		FFE67C7824C66F4F2E877EA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985A12392B43DB1B5A106FFB /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C9FC5A05BDBC42FC879DCA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD61C78FD0DB7CA015F7956E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D8863408DEC97DFBB321E94;
+			remoteInfo = MomuriMonitor;
+		};
+		0F999044174872DB4F1F4EE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD61C78FD0DB7CA015F7956E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83E034DF74C84CC53B587E89;
+			remoteInfo = MomuriReport;
+		};
+		99CCC9E05CE2E92D8CD07814 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD61C78FD0DB7CA015F7956E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5CB6FA0734AD16CB2F155A6;
+			remoteInfo = Momuri;
+		};
+		F4201C8DF11D9C10540382E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD61C78FD0DB7CA015F7956E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E200A4CD25A06C543A43525C;
+			remoteInfo = MomuriWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B543B8713407DFD7390012FE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F269295168F8CD228A3C075F /* MomuriWidget.appex in Embed Foundation Extensions */,
+				5A3605EC84529E32266907EF /* MomuriMonitor.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22EAF7B011F5A7718FA8FBC /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				D4A23ED8C808816D217DA9AF /* MomuriReport.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0EBAD85C90AF7A6570FD5CD4 /* LockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidget.swift; sourceTree = "<group>"; };
+		1041957136C93C34EBB1E11F /* RoutineFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineFactory.swift; sourceTree = "<group>"; };
+		14A53C6E418CFA0F65252A1A /* MomuriWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MomuriWidget.entitlements; sourceTree = "<group>"; };
+		1722C6657C527A60EA237B62 /* ScreenTimeShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeShared.swift; sourceTree = "<group>"; };
+		17E6F5D6D9B7B72FCB5CFE97 /* AlarmScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmScheduler.swift; sourceTree = "<group>"; };
+		1D576434A06BC951F612DFB0 /* ShareModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareModels.swift; sourceTree = "<group>"; };
+		234E1DCC22D3652BFEBB44AC /* ShareSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSection.swift; sourceTree = "<group>"; };
+		2B247410CFBF856CCD961368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2C04CC7C0F72A5C344770405 /* RoutineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineControl.swift; sourceTree = "<group>"; };
+		2CA78B73A60B29DCA5660B68 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		2D1BE7C4D3578A32B96E7D88 /* MomuriWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomuriWidget.swift; sourceTree = "<group>"; };
+		2D28D858E254E42B7829BFC7 /* Momuri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Momuri.entitlements; sourceTree = "<group>"; };
+		343E1988EB2D6C4CBE6A1F2F /* RoutineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineListView.swift; sourceTree = "<group>"; };
+		3B647392B432D0602FB3B31D /* PartChips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartChips.swift; sourceTree = "<group>"; };
+		3BA17969C03D59388FB6E75A /* MomuriReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MomuriReport.entitlements; sourceTree = "<group>"; };
+		409978BB4171CBA9F0AB438D /* DietLiveActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietLiveActivityWidget.swift; sourceTree = "<group>"; };
+		411D8CF2DB1AC686186A21D8 /* ChatFallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFallback.swift; sourceTree = "<group>"; };
+		42CACCCC5539C87F60C81C00 /* Momuri.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Momuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D359D86C1DBE6386A59DCA /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		47ACC9BC79496ADC22252D66 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		488A306AE5C9A141B17B7223 /* DietLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietLiveActivity.swift; sourceTree = "<group>"; };
+		54AA2F0155DAFB97F7304463 /* MonthCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCalendarView.swift; sourceTree = "<group>"; };
+		5A1716D63F155EA46836D8CE /* MomuriMonitor.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MomuriMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABF3118D1CACC6E218C64A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DABCDACF8CA9F0AECE0BD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6FC9EF9921404D80FC4F2694 /* GrassViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrassViews.swift; sourceTree = "<group>"; };
+		6FD04F83DB2DAD591B170857 /* Routine+Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routine+Schedule.swift"; sourceTree = "<group>"; };
+		7468D8959E0050123430931A /* MomuriWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MomuriWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		784B3F8CD589BF0621025D36 /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
+		7AF76C87A7FCB590CD99C661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7DB1CD5EB33479023E3724FE /* MomuriReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = MomuriReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		82065523947EABA07C3B2514 /* ActivityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMonitor.swift; sourceTree = "<group>"; };
+		868B7FA02D9B7DEA8D9AF93E /* MomuriCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomuriCharacterView.swift; sourceTree = "<group>"; };
+		86C6104499CE45A8410A005A /* RoutineActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineActions.swift; sourceTree = "<group>"; };
+		8A06B083A0F68579D037F5AE /* HomeBlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBlobView.swift; sourceTree = "<group>"; };
+		8B85384B8A8BC370DA1A62B6 /* DebugSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSeed.swift; sourceTree = "<group>"; };
+		8DC2EA510AF65FAE6A3F4F1C /* CalendarTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTab.swift; sourceTree = "<group>"; };
+		8DEF0173A07178B00036954F /* ScreenTimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeManager.swift; sourceTree = "<group>"; };
+		903B32C8F38494AC857CDEF6 /* RoutineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailView.swift; sourceTree = "<group>"; };
+		903F768C76EAD2A25139E74B /* MomuriReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomuriReport.swift; sourceTree = "<group>"; };
+		921FE63E3694D1D0F602D9B7 /* ScreenTimeReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeReportView.swift; sourceTree = "<group>"; };
+		95165C7A4DEC7A35F73991FD /* WorkoutLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogView.swift; sourceTree = "<group>"; };
+		9628E522794E63D6DD831F42 /* ShareSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSync.swift; sourceTree = "<group>"; };
+		9815020600DC763B06F33860 /* Workout+Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout+Stats.swift"; sourceTree = "<group>"; };
+		985A12392B43DB1B5A106FFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		99CE87321F66ADA313CEF1E5 /* HealthSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSync.swift; sourceTree = "<group>"; };
+		9A432396D5264EC90C893913 /* ToggleRoutineIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRoutineIntent.swift; sourceTree = "<group>"; };
+		9C6FB903F268763E6A2AE66C /* ChatTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTools.swift; sourceTree = "<group>"; };
+		AA5EB809F802E17D48CCFB70 /* momuri.riv */ = {isa = PBXFileReference; path = momuri.riv; sourceTree = "<group>"; };
+		AEEECCFD829201463E8EAA6E /* StudyLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyLogView.swift; sourceTree = "<group>"; };
+		B8F6E634521753498CF63E52 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		C00F286B8E955FDB1BD41EC3 /* CompleteFromAlarmIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteFromAlarmIntent.swift; sourceTree = "<group>"; };
+		C1EE949670837712C08DEBFD /* RoutineFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineFormView.swift; sourceTree = "<group>"; };
+		C43BDDC70FB13C27F82BCF01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C8A523855D9E0D711418D473 /* ShareClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareClient.swift; sourceTree = "<group>"; };
+		C9F911AEDB8FCA3FED41CDF5 /* MomuriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomuriApp.swift; sourceTree = "<group>"; };
+		CF42B65592A8B0C98DEE3AE6 /* MomuriTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MomuriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EF4DC6CD555B6577946815 /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
+		D74B7D102ED945E4000F8D99 /* RoutineIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineIntents.swift; sourceTree = "<group>"; };
+		E0654174A76B8F5B714AF80C /* Diet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diet.swift; sourceTree = "<group>"; };
+		E3A26B2C0D2BCC546A996977 /* MomuriMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MomuriMonitor.entitlements; sourceTree = "<group>"; };
+		E7007B95E51250F2FCD299E5 /* Backup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
+		E8A1051940C76B36D6B08017 /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		F7FCFB6557E3FD5C62D2F9FF /* MomuriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomuriTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		887AB84D82F3A8002B633035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA683B31952FA262A5543DE /* RiveRuntime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B719A56429CE31CB88BA4DD /* MomuriTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7FCFB6557E3FD5C62D2F9FF /* MomuriTests.swift */,
+			);
+			path = MomuriTests;
+			sourceTree = "<group>";
+		};
+		79B4C1C9281E5DA569DE4F8B /* MomuriMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				82065523947EABA07C3B2514 /* ActivityMonitor.swift */,
+				7AF76C87A7FCB590CD99C661 /* Info.plist */,
+				E3A26B2C0D2BCC546A996977 /* MomuriMonitor.entitlements */,
+			);
+			path = MomuriMonitor;
+			sourceTree = "<group>";
+		};
+		A11F14B0C2236FE03E88C3C2 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				C8A523855D9E0D711418D473 /* ShareClient.swift */,
+				1D576434A06BC951F612DFB0 /* ShareModels.swift */,
+				234E1DCC22D3652BFEBB44AC /* ShareSection.swift */,
+				9628E522794E63D6DD831F42 /* ShareSync.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		C792AE6E7E2A893C3A15AA40 /* MomuriWidget */ = {
+			isa = PBXGroup;
+			children = (
+				409978BB4171CBA9F0AB438D /* DietLiveActivityWidget.swift */,
+				2B247410CFBF856CCD961368 /* Info.plist */,
+				0EBAD85C90AF7A6570FD5CD4 /* LockScreenWidget.swift */,
+				14A53C6E418CFA0F65252A1A /* MomuriWidget.entitlements */,
+				2D1BE7C4D3578A32B96E7D88 /* MomuriWidget.swift */,
+				2C04CC7C0F72A5C344770405 /* RoutineControl.swift */,
+			);
+			path = MomuriWidget;
+			sourceTree = "<group>";
+		};
+		CE5B655619EFC46AEA6E9A28 /* MomuriReport */ = {
+			isa = PBXGroup;
+			children = (
+				C43BDDC70FB13C27F82BCF01 /* Info.plist */,
+				3BA17969C03D59388FB6E75A /* MomuriReport.entitlements */,
+				903F768C76EAD2A25139E74B /* MomuriReport.swift */,
+			);
+			path = MomuriReport;
+			sourceTree = "<group>";
+		};
+		D67C630C1EEB17C302A49D34 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				411D8CF2DB1AC686186A21D8 /* ChatFallback.swift */,
+				B8F6E634521753498CF63E52 /* ChatModel.swift */,
+				9C6FB903F268763E6A2AE66C /* ChatTools.swift */,
+				45D359D86C1DBE6386A59DCA /* ChatView.swift */,
+				1041957136C93C34EBB1E11F /* RoutineFactory.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		DA870C455A0663C666454AA4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C00F286B8E955FDB1BD41EC3 /* CompleteFromAlarmIntent.swift */,
+				E0654174A76B8F5B714AF80C /* Diet.swift */,
+				6FC9EF9921404D80FC4F2694 /* GrassViews.swift */,
+				2CA78B73A60B29DCA5660B68 /* Models.swift */,
+				47ACC9BC79496ADC22252D66 /* NotificationScheduler.swift */,
+				6FD04F83DB2DAD591B170857 /* Routine+Schedule.swift */,
+				86C6104499CE45A8410A005A /* RoutineActions.swift */,
+				D74B7D102ED945E4000F8D99 /* RoutineIntents.swift */,
+				1722C6657C527A60EA237B62 /* ScreenTimeShared.swift */,
+				E8A1051940C76B36D6B08017 /* SharedStore.swift */,
+				9A432396D5264EC90C893913 /* ToggleRoutineIntent.swift */,
+				9815020600DC763B06F33860 /* Workout+Stats.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E3A59289B55E916C5BAA80AD /* Momuri */ = {
+			isa = PBXGroup;
+			children = (
+				17E6F5D6D9B7B72FCB5CFE97 /* AlarmScheduler.swift */,
+				D2EF4DC6CD555B6577946815 /* AppShortcuts.swift */,
+				5ABF3118D1CACC6E218C64A0 /* Assets.xcassets */,
+				E7007B95E51250F2FCD299E5 /* Backup.swift */,
+				8DC2EA510AF65FAE6A3F4F1C /* CalendarTab.swift */,
+				784B3F8CD589BF0621025D36 /* CategoryPickerView.swift */,
+				985A12392B43DB1B5A106FFB /* ContentView.swift */,
+				8B85384B8A8BC370DA1A62B6 /* DebugSeed.swift */,
+				488A306AE5C9A141B17B7223 /* DietLiveActivity.swift */,
+				99CE87321F66ADA313CEF1E5 /* HealthSync.swift */,
+				8A06B083A0F68579D037F5AE /* HomeBlobView.swift */,
+				5DABCDACF8CA9F0AECE0BD93 /* Info.plist */,
+				2D28D858E254E42B7829BFC7 /* Momuri.entitlements */,
+				AA5EB809F802E17D48CCFB70 /* momuri.riv */,
+				C9F911AEDB8FCA3FED41CDF5 /* MomuriApp.swift */,
+				868B7FA02D9B7DEA8D9AF93E /* MomuriCharacterView.swift */,
+				54AA2F0155DAFB97F7304463 /* MonthCalendarView.swift */,
+				3B647392B432D0602FB3B31D /* PartChips.swift */,
+				903B32C8F38494AC857CDEF6 /* RoutineDetailView.swift */,
+				C1EE949670837712C08DEBFD /* RoutineFormView.swift */,
+				343E1988EB2D6C4CBE6A1F2F /* RoutineListView.swift */,
+				8DEF0173A07178B00036954F /* ScreenTimeManager.swift */,
+				921FE63E3694D1D0F602D9B7 /* ScreenTimeReportView.swift */,
+				AEEECCFD829201463E8EAA6E /* StudyLogView.swift */,
+				95165C7A4DEC7A35F73991FD /* WorkoutLogView.swift */,
+				D67C630C1EEB17C302A49D34 /* AI */,
+				A11F14B0C2236FE03E88C3C2 /* Share */,
+			);
+			path = Momuri;
+			sourceTree = "<group>";
+		};
+		F37C86C7B0B906F091206D6E = {
+			isa = PBXGroup;
+			children = (
+				E3A59289B55E916C5BAA80AD /* Momuri */,
+				79B4C1C9281E5DA569DE4F8B /* MomuriMonitor */,
+				CE5B655619EFC46AEA6E9A28 /* MomuriReport */,
+				3B719A56429CE31CB88BA4DD /* MomuriTests */,
+				C792AE6E7E2A893C3A15AA40 /* MomuriWidget */,
+				DA870C455A0663C666454AA4 /* Shared */,
+				F733D1560E8B07304B7734C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F733D1560E8B07304B7734C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42CACCCC5539C87F60C81C00 /* Momuri.app */,
+				5A1716D63F155EA46836D8CE /* MomuriMonitor.appex */,
+				7DB1CD5EB33479023E3724FE /* MomuriReport.appex */,
+				CF42B65592A8B0C98DEE3AE6 /* MomuriTests.xctest */,
+				7468D8959E0050123430931A /* MomuriWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CFB43BC9925115AC5F2EC2C /* MomuriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E9BED0AEFBA87D7214E61C1 /* Build configuration list for PBXNativeTarget "MomuriTests" */;
+			buildPhases = (
+				39A09B72ABF46A7CA01063F2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD438374F25D819EF5026BA4 /* PBXTargetDependency */,
+			);
+			name = MomuriTests;
+			packageProductDependencies = (
+			);
+			productName = MomuriTests;
+			productReference = CF42B65592A8B0C98DEE3AE6 /* MomuriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D8863408DEC97DFBB321E94 /* MomuriMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47991D7B2635EF94219CF3D4 /* Build configuration list for PBXNativeTarget "MomuriMonitor" */;
+			buildPhases = (
+				3737EA66FDCBB41FBF3599F9 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MomuriMonitor;
+			packageProductDependencies = (
+			);
+			productName = MomuriMonitor;
+			productReference = 5A1716D63F155EA46836D8CE /* MomuriMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		83E034DF74C84CC53B587E89 /* MomuriReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C6A81002015F6E3E163A764 /* Build configuration list for PBXNativeTarget "MomuriReport" */;
+			buildPhases = (
+				3FB9C523EEACBE1F86CDF20E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MomuriReport;
+			packageProductDependencies = (
+			);
+			productName = MomuriReport;
+			productReference = 7DB1CD5EB33479023E3724FE /* MomuriReport.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		D5CB6FA0734AD16CB2F155A6 /* Momuri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A1C6397C2A2C29D3658D84B /* Build configuration list for PBXNativeTarget "Momuri" */;
+			buildPhases = (
+				E2F503F15D7C70557DD1CB20 /* Sources */,
+				91B0DDA73A5C6907765DCB39 /* Resources */,
+				887AB84D82F3A8002B633035 /* Frameworks */,
+				B543B8713407DFD7390012FE /* Embed Foundation Extensions */,
+				F22EAF7B011F5A7718FA8FBC /* Embed ExtensionKit Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA5CAE8E15B79AFEEB40EA4 /* PBXTargetDependency */,
+				CA66C021561C46D5BDD264C4 /* PBXTargetDependency */,
+				064B347C54B0F092455CCFB5 /* PBXTargetDependency */,
+			);
+			name = Momuri;
+			packageProductDependencies = (
+				F563C3D41E0D3DB8AA894E1B /* RiveRuntime */,
+			);
+			productName = Momuri;
+			productReference = 42CACCCC5539C87F60C81C00 /* Momuri.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E200A4CD25A06C543A43525C /* MomuriWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8B56EB5A5460622452BE46 /* Build configuration list for PBXNativeTarget "MomuriWidget" */;
+			buildPhases = (
+				E27BA2C7632D01C3CAEBDA1B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MomuriWidget;
+			packageProductDependencies = (
+			);
+			productName = MomuriWidget;
+			productReference = 7468D8959E0050123430931A /* MomuriWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD61C78FD0DB7CA015F7956E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5CFB43BC9925115AC5F2EC2C = {
+						DevelopmentTeam = "";
+					};
+					6D8863408DEC97DFBB321E94 = {
+						DevelopmentTeam = "";
+					};
+					83E034DF74C84CC53B587E89 = {
+						DevelopmentTeam = "";
+					};
+					D5CB6FA0734AD16CB2F155A6 = {
+						DevelopmentTeam = "";
+					};
+					E200A4CD25A06C543A43525C = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = D37F50AB9F48ED7151EDD15D /* Build configuration list for PBXProject "Momuri" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F37C86C7B0B906F091206D6E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AEBC969264CC15FFE08E1CB8 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F733D1560E8B07304B7734C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5CB6FA0734AD16CB2F155A6 /* Momuri */,
+				6D8863408DEC97DFBB321E94 /* MomuriMonitor */,
+				83E034DF74C84CC53B587E89 /* MomuriReport */,
+				5CFB43BC9925115AC5F2EC2C /* MomuriTests */,
+				E200A4CD25A06C543A43525C /* MomuriWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91B0DDA73A5C6907765DCB39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2652E8EF88FE30EF10E0C6 /* Assets.xcassets in Resources */,
+				AF584A5BE442E12813208BA6 /* momuri.riv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3737EA66FDCBB41FBF3599F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15538593CAFBF8DB30C99B47 /* ActivityMonitor.swift in Sources */,
+				393D376E8A15345F9D50FC3F /* ScreenTimeShared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A09B72ABF46A7CA01063F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15D00B8E11AD9A216752CC1 /* MomuriTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB9C523EEACBE1F86CDF20E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8880A452B893BF65AFFAF951 /* MomuriReport.swift in Sources */,
+				AB71D8C0C0DC0874CD23A58A /* ScreenTimeShared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E27BA2C7632D01C3CAEBDA1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E2D45D8E69290C9C145523 /* CompleteFromAlarmIntent.swift in Sources */,
+				195CB1F18E157212242A2388 /* Diet.swift in Sources */,
+				AD9F4767A5122BCD505F05A6 /* DietLiveActivityWidget.swift in Sources */,
+				5FEB639DA24ECF6606C9E9F6 /* GrassViews.swift in Sources */,
+				F7DDB7079C2193A94EE92E28 /* LockScreenWidget.swift in Sources */,
+				A7F9E3C864631E8EF4AACB03 /* Models.swift in Sources */,
+				8FAEA52C9AEC6A40C78D309B /* MomuriWidget.swift in Sources */,
+				109F4EAAA9898A1513FBDB6D /* NotificationScheduler.swift in Sources */,
+				424098848B826ED45322A923 /* Routine+Schedule.swift in Sources */,
+				46F6B2E32B0921B72AD6D935 /* RoutineActions.swift in Sources */,
+				0ABD8FA1E10234D60A3838AB /* RoutineControl.swift in Sources */,
+				810DC453FE00F99F20012DD3 /* RoutineIntents.swift in Sources */,
+				6E59FCEB5B2F4D8C46101E52 /* ScreenTimeShared.swift in Sources */,
+				384C4221FDB2718A7AC7232C /* SharedStore.swift in Sources */,
+				A75AB2CDCFB11F207FA69F81 /* ToggleRoutineIntent.swift in Sources */,
+				F23CF48A4C50A45DA5189E78 /* Workout+Stats.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F503F15D7C70557DD1CB20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70FA1C7FBAB3DEF675E8C09 /* AlarmScheduler.swift in Sources */,
+				EDFE7128B8CD9C88983F5A35 /* AppShortcuts.swift in Sources */,
+				851D0A0F85649392ED84FFCB /* Backup.swift in Sources */,
+				E25CA201F46F37E68B6F5A9F /* CalendarTab.swift in Sources */,
+				74C136BDFF18EE030F62C239 /* CategoryPickerView.swift in Sources */,
+				E4DEE5602C363FC06C1BBDF6 /* ChatFallback.swift in Sources */,
+				013A1F868F4656B211666DDC /* ChatModel.swift in Sources */,
+				B3F44E1C4F60146E9FC8019A /* ChatTools.swift in Sources */,
+				F200F2860B5468BCDF4926C1 /* ChatView.swift in Sources */,
+				6AF77650F0E907315FF3345A /* CompleteFromAlarmIntent.swift in Sources */,
+				FFE67C7824C66F4F2E877EA1 /* ContentView.swift in Sources */,
+				FDF6B2E6A62A3EFD5D57AB2E /* DebugSeed.swift in Sources */,
+				1BD57CA1EDA31BFD0647D76A /* Diet.swift in Sources */,
+				670F14303459CE1B2D3EF45B /* DietLiveActivity.swift in Sources */,
+				A24F88D4C4E7DACB4D3A3487 /* GrassViews.swift in Sources */,
+				32D90D971006ED4B6C1C891D /* HealthSync.swift in Sources */,
+				A747D42EE4927D88CE051693 /* HomeBlobView.swift in Sources */,
+				CBCB375EA17C7BB639BD11AB /* Models.swift in Sources */,
+				58B738095D6BC1A70F5BCDA2 /* MomuriApp.swift in Sources */,
+				6AB28CEA080EA4C9AC34FC69 /* MomuriCharacterView.swift in Sources */,
+				D541728DB4D7F3C745865DAE /* MonthCalendarView.swift in Sources */,
+				4C8C3637DD891EBC20C3C2A7 /* NotificationScheduler.swift in Sources */,
+				65AA5610AE0565F91E50BC81 /* PartChips.swift in Sources */,
+				489082965126D2DF08DB05DF /* Routine+Schedule.swift in Sources */,
+				F73F58DFE53153EDB8E58CDD /* RoutineActions.swift in Sources */,
+				F85E9BAE1BF71B4955F14FBD /* RoutineDetailView.swift in Sources */,
+				0719B329E7C65B80F9BE3B34 /* RoutineFactory.swift in Sources */,
+				9E8024C32601296074E23737 /* RoutineFormView.swift in Sources */,
+				D75E081EEE18308442160CDC /* RoutineIntents.swift in Sources */,
+				B65310B1AC3B108808192A50 /* RoutineListView.swift in Sources */,
+				F9D035144468CFB80C8FC8A5 /* ScreenTimeManager.swift in Sources */,
+				935172409B8FF95DFA8FCE07 /* ScreenTimeReportView.swift in Sources */,
+				5F20EB716D61C97E148AA2A0 /* ScreenTimeShared.swift in Sources */,
+				34A32E835C98ACF0635DE450 /* ShareClient.swift in Sources */,
+				E9DF5FA932F3EBF90844A9CD /* ShareModels.swift in Sources */,
+				E7D243144A3164D8F8CF5285 /* ShareSection.swift in Sources */,
+				A863DCCA1AADA3AF264DFB19 /* ShareSync.swift in Sources */,
+				A013348E640CC73ED23AA1F7 /* SharedStore.swift in Sources */,
+				34D51668E8CF5878C9004C9B /* StudyLogView.swift in Sources */,
+				B507B71BFAE0D5222EB1DEE0 /* ToggleRoutineIntent.swift in Sources */,
+				E83D529C1B11B32E748D5A93 /* Workout+Stats.swift in Sources */,
+				7E4763998C542C0601E47A25 /* WorkoutLogView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		064B347C54B0F092455CCFB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83E034DF74C84CC53B587E89 /* MomuriReport */;
+			targetProxy = 0F999044174872DB4F1F4EE1 /* PBXContainerItemProxy */;
+		};
+		9CA5CAE8E15B79AFEEB40EA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E200A4CD25A06C543A43525C /* MomuriWidget */;
+			targetProxy = F4201C8DF11D9C10540382E8 /* PBXContainerItemProxy */;
+		};
+		CA66C021561C46D5BDD264C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D8863408DEC97DFBB321E94 /* MomuriMonitor */;
+			targetProxy = 0C9FC5A05BDBC42FC879DCA5 /* PBXContainerItemProxy */;
+		};
+		DD438374F25D819EF5026BA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5CB6FA0734AD16CB2F155A6 /* Momuri */;
+			targetProxy = 99CCC9E05CE2E92D8CD07814 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		202AC89116D65C426F6227A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MomuriReport/MomuriReport.entitlements;
+				INFOPLIST_FILE = MomuriReport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rymchoi.momuri.report;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23F04F9FA30CC1303A1D0A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rymchoi.momuri.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Momuri.app/Momuri";
+			};
+			name = Debug;
+		};
+		3B13CF2D5EA9BED6B4B6D710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MomuriReport/MomuriReport.entitlements;
+				INFOPLIST_FILE = MomuriReport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rymchoi.momuri.report;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6110157D74A004C2A55BEBEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rymchoi.momuri.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Momuri.app/Momuri";
+			};
+			name = Release;
+		};
+		70B471DBE4DAD434ADFD79BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MomuriMonitor/MomuriMonitor.entitlements;
+				INFOPLIST_FILE = MomuriMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rymchoi.momuri.monitor;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83BAD0256B4F2AC87976E503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B0EA31FA7443D680D0C355C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MomuriMonitor/MomuriMonitor.entitlements;
+				INFOPLIST_FILE = MomuriMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rymchoi.momuri.monitor;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5D6A2C508899B6840652308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MomuriWidget/MomuriWidget.entitlements;
+				INFOPLIST_FILE = MomuriWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rymchoi.momuri.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C497CD7F76712AC9C21A72FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DA6A70B604F7D4B3A76F3DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Momuri/Momuri.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Momuri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rymchoi.momuri;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3AD9696030AAD574237E93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MomuriWidget/MomuriWidget.entitlements;
+				INFOPLIST_FILE = MomuriWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rymchoi.momuri.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECF2470BD9EDB5C8715C08E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Momuri/Momuri.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Momuri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rymchoi.momuri;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E9BED0AEFBA87D7214E61C1 /* Build configuration list for PBXNativeTarget "MomuriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F04F9FA30CC1303A1D0A6C /* Debug */,
+				6110157D74A004C2A55BEBEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3A1C6397C2A2C29D3658D84B /* Build configuration list for PBXNativeTarget "Momuri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF2470BD9EDB5C8715C08E4 /* Debug */,
+				DA6A70B604F7D4B3A76F3DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		47991D7B2635EF94219CF3D4 /* Build configuration list for PBXNativeTarget "MomuriMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70B471DBE4DAD434ADFD79BD /* Debug */,
+				B0EA31FA7443D680D0C355C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4C6A81002015F6E3E163A764 /* Build configuration list for PBXNativeTarget "MomuriReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				202AC89116D65C426F6227A6 /* Debug */,
+				3B13CF2D5EA9BED6B4B6D710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AD8B56EB5A5460622452BE46 /* Build configuration list for PBXNativeTarget "MomuriWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3AD9696030AAD574237E93C /* Debug */,
+				B5D6A2C508899B6840652308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D37F50AB9F48ED7151EDD15D /* Build configuration list for PBXProject "Momuri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83BAD0256B4F2AC87976E503 /* Debug */,
+				C497CD7F76712AC9C21A72FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AEBC969264CC15FFE08E1CB8 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 6.28.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F563C3D41E0D3DB8AA894E1B /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEBC969264CC15FFE08E1CB8 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FD61C78FD0DB7CA015F7956E /* Project object */;
+}
