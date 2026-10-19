@@ -126,3 +126,6 @@ schemes:
         Momuri: all
     test:
       targets: [MomuriTests]
+      # 테스트는 한국어 문장을 확인하므로 시뮬레이터 언어와 상관없이 한국어로 돌린다
+      language: ko
+      region: KR

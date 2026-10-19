@@ -115,7 +115,7 @@ final class ChatModel {
         f.dateFormat = "yyyy-MM-dd (E)"
         let routines = ((try? SharedStore.container.mainContext.fetch(FetchDescriptor<Routine>())) ?? [])
             .filter { $0.kind != .once || $0.isUpcoming }
-            .map { "- \($0.name) [\($0.category.title)] \($0.statusLabel)" }
+            .map { "- \($0.displayName) [\($0.category.title)] \($0.statusLabel)" }
             .joined(separator: "\n")
         // 답하는 언어는 앱 화면 언어를 따른다
         let replyRule = Locale.app.language.languageCode?.identifier == "ja"

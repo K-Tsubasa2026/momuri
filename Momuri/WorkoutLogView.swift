@@ -12,14 +12,7 @@ struct WorkoutLogView: View {
     @State private var removing = false
 
     /// 부위·종목 이름은 저장 값(한국어). 화면에는 localizedValue 로 보여 준다.
-    private static let presets: [String: [String]] = [
-        "가슴": ["벤치프레스", "인클라인 덤벨프레스", "체스트 플라이", "딥스", "푸시업"],
-        "등": ["랫풀다운", "바벨 로우", "시티드 로우", "데드리프트", "풀업"],
-        "하체": ["스쿼트", "레그프레스", "런지", "레그 컬", "레그 익스텐션"],
-        "어깨": ["오버헤드 프레스", "사이드 레터럴 레이즈", "리어 델트 플라이", "업라이트 로우"],
-        "팔": ["바벨 컬", "해머 컬", "트라이셉스 푸시다운", "오버헤드 익스텐션"],
-        "복근": ["크런치", "플랭크", "레그 레이즈", "행잉 레그 레이즈"],
-    ]
+    private static let presets = StoredValue.exercises
 
     private var routine: Routine? { log.routine }
     private var exercises: [String] { log.exercises }

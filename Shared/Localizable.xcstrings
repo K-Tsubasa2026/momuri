@@ -626,28 +626,8 @@
         }
       }
     },
-    "JSON 형식이 아니에요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "JSON形式ではありません"
-          }
-        }
-      }
-    },
     "Routine ID" : {
       "shouldTranslate" : false
-    },
-    "days 배열이 필요해요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "days配列が必要です"
-          }
-        }
-      }
     },
     "kg" : {
       "shouldTranslate" : false
@@ -715,16 +695,6 @@
     },
     "–" : {
       "shouldTranslate" : false
-    },
-    "가슴" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "胸"
-          }
-        }
-      }
     },
     "각자 체크하고, 루틴 목록에서 서로의 잔디를 볼 수 있어요." : {
       "localizations" : {
@@ -816,16 +786,6 @@
         }
       }
     },
-    "건강" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "健康"
-          }
-        }
-      }
-    },
     "건강 앱(애플워치·러닝 앱)의 러닝 운동이 앱을 열 때 자동으로 들어와요. 직접 적은 기록도 함께 쌓여요." : {
       "localizations" : {
         "ja" : {
@@ -906,16 +866,6 @@
         }
       }
     },
-    "공부" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "勉強"
-          }
-        }
-      }
-    },
     "공부 시작" : {
       "localizations" : {
         "ja" : {
@@ -976,16 +926,6 @@
         }
       }
     },
-    "공유를 찾을 수 없어요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "共有が見つかりません"
-          }
-        }
-      }
-    },
     "공유하기" : {
       "localizations" : {
         "ja" : {
@@ -1006,42 +946,12 @@
         }
       }
     },
-    "관리 · 반려견" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ケア · 愛犬"
-          }
-        }
-      }
-    },
     "관리·미용" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ケア・美容"
-          }
-        }
-      }
-    },
-    "구충제" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "駆虫薬"
-          }
-        }
-      }
-    },
-    "귀 청소" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "耳掃除"
           }
         }
       }
@@ -1368,16 +1278,6 @@
         }
       }
     },
-    "너무 커요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サイズが大きすぎます"
-          }
-        }
-      }
-    },
     "누구와 무엇을" : {
       "localizations" : {
         "ja" : {
@@ -1498,52 +1398,12 @@
         }
       }
     },
-    "데드리프트" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デッドリフト"
-          }
-        }
-      }
-    },
     "두 번 탭하면 자세히 볼 수 있어요" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ダブルタップで詳しく見られます"
-          }
-        }
-      }
-    },
-    "등" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "背中"
-          }
-        }
-      }
-    },
-    "딥스" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ディップス"
-          }
-        }
-      }
-    },
-    "랫풀다운" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ラットプルダウン"
           }
         }
       }
@@ -1564,56 +1424,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ランニング・有酸素"
-          }
-        }
-      }
-    },
-    "런지" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ランジ"
-          }
-        }
-      }
-    },
-    "레그 레이즈" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "レッグレイズ"
-          }
-        }
-      }
-    },
-    "레그 익스텐션" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "レッグエクステンション"
-          }
-        }
-      }
-    },
-    "레그 컬" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "レッグカール"
-          }
-        }
-      }
-    },
-    "레그프레스" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "レッグプレス"
           }
         }
       }
@@ -1708,16 +1518,6 @@
         }
       }
     },
-    "루틴 정보가 올바르지 않아요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ルーティンの情報が正しくありません"
-          }
-        }
-      }
-    },
     "루틴 체크" : {
       "localizations" : {
         "ja" : {
@@ -1788,16 +1588,6 @@
         }
       }
     },
-    "리어 델트 플라이" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "リアデルトフライ"
-          }
-        }
-      }
-    },
     "마지막 자동 백업 %@" : {
       "localizations" : {
         "ja" : {
@@ -1824,16 +1614,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "作成中…"
-          }
-        }
-      }
-    },
-    "만든 사람만 바꿀 수 있어요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "作成者だけが変更できます"
           }
         }
       }
@@ -2040,16 +1820,6 @@
         }
       }
     },
-    "문제" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "問"
-          }
-        }
-      }
-    },
     "미리 알림" : {
       "localizations" : {
         "ja" : {
@@ -2060,42 +1830,12 @@
         }
       }
     },
-    "미용" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "トリミング"
-          }
-        }
-      }
-    },
     "바꾸기" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "置き換える"
-          }
-        }
-      }
-    },
-    "바벨 로우" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "バーベルロウ"
-          }
-        }
-      }
-    },
-    "바벨 컬" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "バーベルカール"
           }
         }
       }
@@ -2116,16 +1856,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "繰り返し"
-          }
-        }
-      }
-    },
-    "발톱 깎기" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "爪切り"
           }
         }
       }
@@ -2180,42 +1910,12 @@
         }
       }
     },
-    "벤치프레스" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ベンチプレス"
-          }
-        }
-      }
-    },
     "보내기" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "送る"
-          }
-        }
-      }
-    },
-    "보낼 사람을 찾을 수 없어요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "送り先が見つかりません"
-          }
-        }
-      }
-    },
-    "복근" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "腹筋"
           }
         }
       }
@@ -2236,26 +1936,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "服用時間を追加"
-          }
-        }
-      }
-    },
-    "분" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "分"
-          }
-        }
-      }
-    },
-    "사이드 레터럴 레이즈" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サイドレイズ"
           }
         }
       }
@@ -2320,16 +2000,6 @@
         }
       }
     },
-    "샴푸" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "シャンプー"
-          }
-        }
-      }
-    },
     "샴푸, 심장사상충, 접종" : {
       "localizations" : {
         "ja" : {
@@ -2346,16 +2016,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "シャンプー、フィラリア…"
-          }
-        }
-      }
-    },
-    "서버 오류" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバーエラー"
           }
         }
       }
@@ -2500,42 +2160,12 @@
         }
       }
     },
-    "스쿼트" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "スクワット"
-          }
-        }
-      }
-    },
-    "시간 형식이 아니에요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "時間の形式ではありません"
-          }
-        }
-      }
-    },
     "시작" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "開始"
-          }
-        }
-      }
-    },
-    "시티드 로우" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "シーテッドロウ"
           }
         }
       }
@@ -2688,16 +2318,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "食事終了の30分前です"
-          }
-        }
-      }
-    },
-    "심장사상충 약" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "フィラリアの薬"
           }
         }
       }
@@ -2928,16 +2548,6 @@
         }
       }
     },
-    "어깨" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "肩"
-          }
-        }
-      }
-    },
     "어디서" : {
       "localizations" : {
         "ja" : {
@@ -2984,16 +2594,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "いつ"
-          }
-        }
-      }
-    },
-    "업라이트 로우" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アップライトロウ"
           }
         }
       }
@@ -3262,26 +2862,6 @@
         }
       }
     },
-    "오버헤드 익스텐션" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "オーバーヘッドエクステンション"
-          }
-        }
-      }
-    },
-    "오버헤드 프레스" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "オーバーヘッドプレス"
-          }
-        }
-      }
-    },
     "완료" : {
       "localizations" : {
         "ja" : {
@@ -3338,16 +2918,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "月"
-          }
-        }
-      }
-    },
-    "유산소" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "有酸素"
           }
         }
       }
@@ -3448,16 +3018,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "名前を入力してください"
-          }
-        }
-      }
-    },
-    "이름이 필요해요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "名前が必要です"
           }
         }
       }
@@ -3582,26 +3142,6 @@
         }
       }
     },
-    "인증이 필요해요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "認証が必要です"
-          }
-        }
-      }
-    },
-    "인클라인 덤벨프레스" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "インクラインダンベルプレス"
-          }
-        }
-      }
-    },
     "일" : {
       "localizations" : {
         "ja" : {
@@ -3638,16 +3178,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "よくやること"
-          }
-        }
-      }
-    },
-    "잠시 뒤에 다시 시도해 주세요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "しばらくしてからもう一度お試しください"
           }
         }
       }
@@ -3732,16 +3262,6 @@
         }
       }
     },
-    "조금 뒤에 다시 보내 주세요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "少ししてからもう一度送ってください"
-          }
-        }
-      }
-    },
     "종목 추가" : {
       "localizations" : {
         "ja" : {
@@ -3758,16 +3278,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "種目別ベスト記録"
-          }
-        }
-      }
-    },
-    "종합 백신" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "混合ワクチン"
           }
         }
       }
@@ -3948,16 +3458,6 @@
         }
       }
     },
-    "체스트 플라이" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "チェストフライ"
-          }
-        }
-      }
-    },
     "초과" : {
       "localizations" : {
         "ja" : {
@@ -4004,16 +3504,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "招待コードを送ると、相手も同じルーティンを持ち、お互いの記録を見られます。"
-          }
-        }
-      }
-    },
-    "초대 코드를 찾을 수 없어요" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "招待コードが見つかりません"
           }
         }
       }
@@ -4158,52 +3648,12 @@
         }
       }
     },
-    "크런치" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "クランチ"
-          }
-        }
-      }
-    },
     "토" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "土"
-          }
-        }
-      }
-    },
-    "트라이셉스 푸시다운" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "トライセプスプッシュダウン"
-          }
-        }
-      }
-    },
-    "팔" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "腕"
-          }
-        }
-      }
-    },
-    "페이지" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ページ"
           }
         }
       }
@@ -4224,36 +3674,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "スマホ使用"
-          }
-        }
-      }
-    },
-    "푸시업" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "腕立て伏せ"
-          }
-        }
-      }
-    },
-    "풀업" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "懸垂"
-          }
-        }
-      }
-    },
-    "플랭크" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "プランク"
           }
         }
       }
@@ -4340,16 +3760,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "終日"
-          }
-        }
-      }
-    },
-    "하체" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "下半身"
           }
         }
       }
@@ -4456,26 +3866,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "やることはありません"
-          }
-        }
-      }
-    },
-    "해머 컬" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ハンマーカール"
-          }
-        }
-      }
-    },
-    "행잉 레그 레이즈" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ハンギングレッグレイズ"
           }
         }
       }

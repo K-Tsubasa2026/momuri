@@ -57,7 +57,7 @@ struct CalendarTab: View {
             }
             Button("취소", role: .cancel) { valueText = "" }
         } message: {
-            if let routine = valueEntry { Text(routine.name + " · " + String(localized: "이번 달 \(routine.statusLabel)")) }
+            if let routine = valueEntry { Text(routine.displayName + " · " + String(localized: "이번 달 \(routine.statusLabel)")) }
         }
         .onChange(of: selected) { _, day in
             month = day
@@ -134,7 +134,7 @@ struct CalendarTab: View {
                         Image(systemName: "checkmark")
                         Text("완료·쉼 \(done.count)개")
                         if !showDone {
-                            Text("· " + done.map(\.name).joined(separator: ", "))
+                            Text("· " + done.map(\.displayName).joined(separator: ", "))
                                 .lineLimit(1)
                         }
                         Spacer()
@@ -178,7 +178,7 @@ struct CalendarTab: View {
                     Image(systemName: done ? "checkmark.circle.fill" : routine.isRestDay(selected) ? "moon.zzz" : partial ? "circle.lefthalf.filled" : "circle")
                         .font(.title3)
                         .foregroundStyle(urgency.color ?? .primary)
-                    Text(routine.name)
+                    Text(routine.displayName)
                         .foregroundStyle(done && !isOpenEnded(routine) ? .secondary : .primary)
                         .lineLimit(1)
                     if routine.shareId != nil {
@@ -241,7 +241,7 @@ struct CalendarTab: View {
                         selected = cal.startOfDay(for: routine.eventDate)
                     } label: {
                         HStack {
-                            Text(routine.name)
+                            Text(routine.displayName)
                             Spacer()
                             Text(routine.eventLabel(relative: false)).foregroundStyle(.secondary).monospacedDigit()
                         }
@@ -321,7 +321,7 @@ struct PartPickerSheet: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             HStack {
-                Text(routine.name).font(.headline)
+                Text(routine.displayName).font(.headline)
                 Spacer()
                 Text(routine.listStatus(on: day)).font(.subheadline).foregroundStyle(.secondary)
             }

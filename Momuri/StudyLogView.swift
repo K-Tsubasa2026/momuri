@@ -28,7 +28,7 @@ struct StudyLogView: View {
                 .padding(20)
             }
             .scrollDismissesKeyboard(.interactively)
-            .navigationTitle(routine.name)
+            .navigationTitle(routine.displayName)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("완료") { dismiss() } } }
         }

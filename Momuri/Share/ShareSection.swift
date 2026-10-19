@@ -21,7 +21,7 @@ struct ShareSection: View {
                 HStack {
                     Text(code).font(.title3.monospaced().weight(.semibold))
                     Spacer()
-                    ShareLink(item: String(localized: "momuri에서 '\(routine.name)' 같이 해요. 초대 코드: \(code)")) {
+                    ShareLink(item: String(localized: "momuri에서 '\(routine.displayName)' 같이 해요. 초대 코드: \(code)")) {
                         Label("초대 보내기", systemImage: "square.and.arrow.up").font(.subheadline)
                     }
                 }

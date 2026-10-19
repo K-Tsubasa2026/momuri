@@ -26,6 +26,7 @@
 		424098848B826ED45322A923 /* Routine+Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD04F83DB2DAD591B170857 /* Routine+Schedule.swift */; };
 		46F6B2E32B0921B72AD6D935 /* RoutineActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C6104499CE45A8410A005A /* RoutineActions.swift */; };
 		489082965126D2DF08DB05DF /* Routine+Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD04F83DB2DAD591B170857 /* Routine+Schedule.swift */; };
+		4B917126E1885823494B6D45 /* StoredValues.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9CD942081170ABC80F11BA73 /* StoredValues.xcstrings */; };
 		4C8C3637DD891EBC20C3C2A7 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACC9BC79496ADC22252D66 /* NotificationScheduler.swift */; };
 		58B738095D6BC1A70F5BCDA2 /* MomuriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F911AEDB8FCA3FED41CDF5 /* MomuriApp.swift */; };
 		5A3605EC84529E32266907EF /* MomuriMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5A1716D63F155EA46836D8CE /* MomuriMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -57,6 +58,8 @@
 		AB71D8C0C0DC0874CD23A58A /* ScreenTimeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722C6657C527A60EA237B62 /* ScreenTimeShared.swift */; };
 		ABC0C6D7E8EA21D81AD2618C /* RoutineOrbitLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB87665048AF369FEA3E4D /* RoutineOrbitLayout.swift */; };
 		AD9F4767A5122BCD505F05A6 /* DietLiveActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409978BB4171CBA9F0AB438D /* DietLiveActivityWidget.swift */; };
+		B1124B6E5DE80B958179CD97 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D7BCE350203D98C8361C7 /* LocalizationTests.swift */; };
+		B38014974EA0B4161DD4712C /* StoredValues.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9CD942081170ABC80F11BA73 /* StoredValues.xcstrings */; };
 		B3F44E1C4F60146E9FC8019A /* ChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB903F268763E6A2AE66C /* ChatTools.swift */; };
 		B507B71BFAE0D5222EB1DEE0 /* ToggleRoutineIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A432396D5264EC90C893913 /* ToggleRoutineIntent.swift */; };
 		B5A7E8BBCD00EDC27087067B /* RoutineOrbitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACC320B0F20EAC29E76400B /* RoutineOrbitView.swift */; };
@@ -161,6 +164,7 @@
 		2D28D858E254E42B7829BFC7 /* Momuri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Momuri.entitlements; sourceTree = "<group>"; };
 		343E1988EB2D6C4CBE6A1F2F /* RoutineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineListView.swift; sourceTree = "<group>"; };
 		348F1CFB7F305DA736AD7B77 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		3A3D7BCE350203D98C8361C7 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
 		3B647392B432D0602FB3B31D /* PartChips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartChips.swift; sourceTree = "<group>"; };
 		3BA17969C03D59388FB6E75A /* MomuriReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MomuriReport.entitlements; sourceTree = "<group>"; };
 		3ECB87665048AF369FEA3E4D /* RoutineOrbitLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineOrbitLayout.swift; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 		99CE87321F66ADA313CEF1E5 /* HealthSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSync.swift; sourceTree = "<group>"; };
 		9A432396D5264EC90C893913 /* ToggleRoutineIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRoutineIntent.swift; sourceTree = "<group>"; };
 		9C6FB903F268763E6A2AE66C /* ChatTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTools.swift; sourceTree = "<group>"; };
+		9CD942081170ABC80F11BA73 /* StoredValues.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = StoredValues.xcstrings; sourceTree = "<group>"; };
 		AEEECCFD829201463E8EAA6E /* StudyLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyLogView.swift; sourceTree = "<group>"; };
 		B8F6E634521753498CF63E52 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		C00F286B8E955FDB1BD41EC3 /* CompleteFromAlarmIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteFromAlarmIntent.swift; sourceTree = "<group>"; };
@@ -223,6 +228,7 @@
 		3B719A56429CE31CB88BA4DD /* MomuriTests */ = {
 			isa = PBXGroup;
 			children = (
+				3A3D7BCE350203D98C8361C7 /* LocalizationTests.swift */,
 				F7FCFB6557E3FD5C62D2F9FF /* MomuriTests.swift */,
 			);
 			path = MomuriTests;
@@ -299,6 +305,7 @@
 				D74B7D102ED945E4000F8D99 /* RoutineIntents.swift */,
 				1722C6657C527A60EA237B62 /* ScreenTimeShared.swift */,
 				E8A1051940C76B36D6B08017 /* SharedStore.swift */,
+				9CD942081170ABC80F11BA73 /* StoredValues.xcstrings */,
 				9A432396D5264EC90C893913 /* ToggleRoutineIntent.swift */,
 				9815020600DC763B06F33860 /* Workout+Stats.swift */,
 			);
@@ -522,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				795FE2020B36FB2E0181A29D /* Localizable.xcstrings in Resources */,
+				B38014974EA0B4161DD4712C /* StoredValues.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +549,7 @@
 				CF2652E8EF88FE30EF10E0C6 /* Assets.xcassets in Resources */,
 				DC2A28AE0DC379DD565893EE /* InfoPlist.xcstrings in Resources */,
 				211D3BEA2BB5B62E68DE8000 /* Localizable.xcstrings in Resources */,
+				4B917126E1885823494B6D45 /* StoredValues.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1124B6E5DE80B958179CD97 /* LocalizationTests.swift in Sources */,
 				D15D00B8E11AD9A216752CC1 /* MomuriTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

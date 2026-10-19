@@ -91,18 +91,6 @@ enum RoutineCategory: String, Codable, CaseIterable {
 
     static let groupOrder = ["건강", "공부", "관리 · 반려견", "기타"]
 
-    /// group 값은 묶는 키로 쓰고, 화면에는 이 이름을 보여 준다
-    static func groupTitle(_ group: String) -> String {
-        switch group {
-        case "건강": String(localized: "건강")
-        case "공부": String(localized: "공부")
-        case "관리 · 반려견": String(localized: "관리 · 반려견")
-        case "약속": String(localized: "약속")
-        case "기타": String(localized: "기타")
-        default: group
-        }
-    }
-
     /// 분류가 정하는 방식. nil 이면 사용자가 고른다.
     var fixedKind: RoutineKind? {
         switch self {
@@ -183,6 +171,9 @@ final class Routine {
         self.kindRaw = kind.rawValue
         self.sortOrder = sortOrder
     }
+
+    /// 화면에 보여 줄 이름. 추천·기본 이름은 한국어로 저장하고 여기서 번역한다.
+    var displayName: String { name.localizedValue }
 
     var kind: RoutineKind {
         get { RoutineKind(rawValue: kindRaw) ?? .daily }

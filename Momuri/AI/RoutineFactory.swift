@@ -36,7 +36,7 @@ enum RoutineFactory {
                 lines.append(intervalValue.map { String(localized: "\($0)\((intervalUnit ?? .month).label)마다") } ?? String(localized: "매일"))
             case .gym:
                 // 부위는 한국어로 저장되는 값이라 보여 줄 때만 번역
-                let shown = (parts.isEmpty ? ["가슴", "등", "하체", "어깨"] : parts).map(\.localizedValue).joined(separator: " · ")
+                let shown = (parts.isEmpty ? StoredValue.defaultParts : parts).map(\.localizedValue).joined(separator: " · ")
                 lines.append(String(localized: "이번 주 \(shown)"))
             case .study:
                 lines.append(String(localized: "하루 \(Routine.format(goal ?? 30))문제"))
@@ -79,7 +79,7 @@ enum RoutineFactory {
         case .medicine:
             r.isCritical = true
         case .gym:
-            r.parts = d.parts.isEmpty ? ["가슴", "등", "하체", "어깨"] : d.parts
+            r.parts = d.parts.isEmpty ? StoredValue.defaultParts : d.parts
             if d.time == nil { r.reminderHour = 19 }
         case .cardio:
             r.targetUnit = "km"

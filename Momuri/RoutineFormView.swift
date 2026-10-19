@@ -63,14 +63,14 @@ struct RoutineFormView: View {
         (0, String(localized: "정각")), (10, String(localized: "10분 전")), (60, String(localized: "1시간 전")), (1440, String(localized: "하루 전")),
     ]
 
-    /// 고르면 루틴 이름으로 저장되므로 화면 언어로 옮긴 이름을 쓴다
+    /// 이름은 저장 값(한국어). 칩과 이름 칸에는 localizedValue 로 보여 준다.
     private static let petPresets: [(name: String, value: Int, unit: IntervalUnit)] = [
-        (String(localized: "샴푸"), 2, .week), (String(localized: "발톱 깎기"), 2, .week), (String(localized: "귀 청소"), 1, .week),
-        (String(localized: "심장사상충 약"), 1, .month), (String(localized: "구충제"), 3, .month), (String(localized: "미용"), 2, .month), (String(localized: "종합 백신"), 12, .month),
+        ("샴푸", 2, .week), ("발톱 깎기", 2, .week), ("귀 청소", 1, .week),
+        ("심장사상충 약", 1, .month), ("구충제", 3, .month), ("미용", 2, .month), ("종합 백신", 12, .month),
     ]
 
     /// 저장 값(한국어). 화면에는 localizedValue 로 보여 준다.
-    private static let presetParts = ["가슴", "등", "하체", "어깨", "팔", "복근", "유산소"]
+    private static let presetParts = StoredValue.parts
 
     private var effectiveKind: RoutineKind { category.fixedKind ?? kind }
 
@@ -432,8 +432,8 @@ struct RoutineFormView: View {
         section("자주 하는 것") {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 96), spacing: 8)], spacing: 8) {
                 ForEach(Self.petPresets, id: \.name) { preset in
-                    chip(preset.name, selected: name == preset.name) {
-                        name = preset.name
+                    chip(preset.name.localizedValue, selected: name == preset.name.localizedValue) {
+                        name = preset.name.localizedValue
                         intervalValue = preset.value
                         unit = preset.unit
                         customInterval = !Self.presets.contains { $0.value == preset.value && $0.unit == preset.unit }
@@ -583,22 +583,22 @@ struct RoutineFormView: View {
             isCritical = true
             doseTimes = [Self.time(8, 0)]
         case .gym:
-            name = String(localized: "헬스")
-            parts = ["가슴", "등", "하체", "어깨"]
+            name = "헬스".localizedValue
+            parts = StoredValue.defaultParts
             reminder = Self.time(19, 0)
         case .cardio:
-            name = String(localized: "러닝")
+            name = "러닝".localizedValue
             autoHealth = HealthSync.isAvailable
         case .care:
             weekendOnly = true
         case .diet:
-            name = String(localized: "식단")
+            name = "식단".localizedValue
         case .appointment:
             showInWidget = false
         case .study:
             reminder = Self.time(22, 0)
         case .screen:
-            name = String(localized: "폰 사용")
+            name = "폰 사용".localizedValue
             screenSelection = ScreenTimeManager.selection
         default:
             break
@@ -607,7 +607,7 @@ struct RoutineFormView: View {
 
     private func load() {
         guard let routine else { return }
-        name = routine.name
+        name = routine.displayName
         kind = routine.kind
         intervalValue = routine.intervalValue
         unit = routine.intervalUnit
@@ -658,7 +658,8 @@ struct RoutineFormView: View {
                 target.logs?.append(log)
             }
         }
-        target.name = name.trimmingCharacters(in: .whitespaces)
+        // 이름 칸에는 번역된 이름을 보여 주므로, 추천·기본 이름이면 한국어로 되돌려 저장한다
+        target.name = StoredValue.key(forDisplayed: name.trimmingCharacters(in: .whitespaces))
         target.kind = kind
         target.intervalValue = intervalValue
         target.intervalUnit = unit

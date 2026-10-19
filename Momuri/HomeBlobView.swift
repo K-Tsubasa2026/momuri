@@ -61,15 +61,15 @@ struct HomeBlobView: View {
     private var blobs: [Blob] {
         let today = Date.now
         let items = routines.filter { r in
-            (r.kind != .once && r.appears(on: today)) || (r.kind == .once && r.isUpcoming && (r.eventLabel(relative: true) != String(localized: "지남")) && (cal.dateComponents([.day], from: cal.startOfDay(for: today), to: cal.startOfDay(for: r.eventDate)).day ?? 99) <= 3)
+            (r.kind != .once && r.appears(on: today)) || (r.kind == .once && r.isUpcoming && (cal.dateComponents([.day], from: cal.startOfDay(for: today), to: cal.startOfDay(for: r.eventDate)).day ?? 99) <= 3)
         }
         let missed = Set(oftenMissed.map(\.0))
         return items.prefix(10).map { r in
             let tone = tone(of: r)
             let base = r.isCritical ? CGSize(width: 108, height: 62) : CGSize(width: 100, height: 58)
             let size = tone == .done || tone == .rest ? CGSize(width: base.width * 0.9, height: base.height * 0.9) : base
-            return Blob(id: r.id, routine: r, title: r.name, status: r.kind == .once ? r.eventLabel(relative: true) : r.listStatus(on: today),
-                        tone: tone, oftenMissed: missed.contains(r.name), size: size, drift: OrbitDrift(id: r.id))
+            return Blob(id: r.id, routine: r, title: r.displayName, status: r.kind == .once ? r.eventLabel(relative: true) : r.listStatus(on: today),
+                        tone: tone, oftenMissed: missed.contains(r.displayName), size: size, drift: OrbitDrift(id: r.id))
         }
     }
 
@@ -93,7 +93,7 @@ struct HomeBlobView: View {
             let days = (1...7).compactMap { cal.date(byAdding: .day, value: -$0, to: cal.startOfDay(for: .now)) }
                 .filter { $0 >= r.startDay && !r.isRestDay($0) }
             let missed = days.filter { !r.isDone(on: $0) }.count
-            return days.count >= 3 && Double(missed) / Double(days.count) >= 0.4 ? (r.name, missed, days.count) : nil
+            return days.count >= 3 && Double(missed) / Double(days.count) >= 0.4 ? (r.displayName, missed, days.count) : nil
         }
     }
 

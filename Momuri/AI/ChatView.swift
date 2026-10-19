@@ -13,6 +13,13 @@ struct ChatView: View {
         String(localized: "이번 달 러닝 얼마나 했어?"),
         String(localized: "헬스 가슴 했어"),
     ]
+    /// 간단 모드(ChatFallback)는 한국어 문장만 알아들으므로, 화면 언어와 상관없이 한국어 예시를 쓴다
+    private let fallbackSuggestions = [
+        "매일 아침 8시에 비타민 먹기",
+        "다음 주 금요일 저녁 7시 강남역에서 유진이랑 저녁",
+        "이번 달 러닝 얼마나 했어?",
+        "헬스 가슴 했어",
+    ]
 
     var body: some View {
         NavigationStack {
@@ -56,7 +63,7 @@ struct ChatView: View {
             Text("말로 루틴을 만들고, 기록하고, 물어보세요.")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
-            ForEach(suggestions, id: \.self) { s in
+            ForEach(chat.isFallback ? fallbackSuggestions : suggestions, id: \.self) { s in
                 Button { Task { await chat.send(s) } } label: {
                     Text(s)
                         .font(.subheadline)
@@ -106,7 +113,7 @@ struct ChatView: View {
         VStack(alignment: .leading, spacing: 10) {
             HStack(spacing: 8) {
                 Image(systemName: draft.category.symbol).foregroundStyle(.secondary)
-                Text(draft.name).font(.headline)
+                Text(draft.name.localizedValue).font(.headline)
             }
             Text(draft.summary.joined(separator: " · "))
                 .font(.subheadline)

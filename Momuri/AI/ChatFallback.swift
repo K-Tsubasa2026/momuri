@@ -44,7 +44,7 @@ enum ChatFallback {
             return all.isEmpty ? String(localized: "아직 루틴이 없어요.") : String(localized: "어떤 루틴이 궁금한지 이름을 넣어 주세요. 예: 이번 달 러닝 얼마나 했어?")
         }
         if t.contains("언제"), routine.kind == .interval || routine.kind == .once {
-            return String(localized: "\(routine.name)은 \(routine.scheduleLabel)이에요.")
+            return String(localized: "\(routine.displayName)은 \(routine.scheduleLabel)이에요.")
         }
         let cal = Calendar.current
         let start: Date = period == "이번 주"
@@ -58,8 +58,8 @@ enum ChatFallback {
         // period 는 비교용 한국어 값, 화면에는 번역해서 보여 준다
         let periodLabel = period == "이번 주" ? String(localized: "이번 주") : period == "이번 달" ? String(localized: "이번 달") : String(localized: "최근 30일")
         return total > 0
-            ? String(localized: "\(routine.name): \(periodLabel) \(days)일 했어요, 합계 \(Routine.format(total))\(unit.localizedValue). 지금 \(routine.statusLabel)")
-            : String(localized: "\(routine.name): \(periodLabel) \(days)일 했어요. 지금 \(routine.statusLabel)")
+            ? String(localized: "\(routine.displayName): \(periodLabel) \(days)일 했어요, 합계 \(Routine.format(total))\(unit.localizedValue). 지금 \(routine.statusLabel)")
+            : String(localized: "\(routine.displayName): \(periodLabel) \(days)일 했어요. 지금 \(routine.statusLabel)")
     }
 
     // MARK: - 기록
@@ -102,7 +102,7 @@ enum ChatFallback {
         }
         var name = cleanName(t)
         if !location.isEmpty { name = name.replacingOccurrences(of: location + "에서", with: "").trimmingCharacters(in: .whitespaces) }
-        return RoutineFactory.Draft(name: name.isEmpty ? String(localized: "약속") : name, category: .appointment, time: timeOf(t, assumePM: true), date: date, location: location)
+        return RoutineFactory.Draft(name: name.isEmpty ? "약속" : name, category: .appointment, time: timeOf(t, assumePM: true), date: date, location: location)
     }
 
     // MARK: - 조각 해석

@@ -16,7 +16,7 @@ struct RoutineDetailView: View {
                     Label(routine.category.title, systemImage: routine.category.symbol)
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
-                    Text(routine.name).font(.title2.weight(.semibold))
+                    Text(routine.displayName).font(.title2.weight(.semibold))
                     Text(routine.scheduleLabel)
                         .font(.subheadline)
                         .foregroundStyle(routine.urgency().color ?? .secondary)
